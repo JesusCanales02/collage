@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS dog;
+
+CREATE TABLE dog (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    breed VARCHAR(255),
+    age INT
+);

@@ -12,7 +12,7 @@ public class Dog {
         private String name;
         private String breed;
         private int age;
-//permiten acceder y modificar los valores de los atributos de la clase.
+//permiten acceder y modificar los valores de los atributos de la clase y todo lo necesario.
         public Long getId() {
             return id;
         }

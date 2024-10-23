@@ -85,7 +85,7 @@ public class DogController {
     public ResponseEntity<String> describeDog(@PathVariable Long id) {
         Dog dog = dogService.findById(id).orElse(null);
         if (dog == null) {
-            return new ResponseEntity<>("Dog not found", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("Perro no encontrado", HttpStatus.NOT_FOUND);
         }
 
         // Llamar al servicio de OpenAI para obtener la descripción del perro

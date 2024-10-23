@@ -25,6 +25,7 @@ public class OpenAIService {
 //        this.openAiService = openAiService;
 //    }
 
+    //Aqui le dara las instrucciones a la IA para que pueda generar la descripcion
     public String getDogDescription(Dog dog) {
 
         var prompt = String.format("Describe un perro llamado %s, de raza %s y que tiene %d años y da una descrupcion muy bonita de perro.",

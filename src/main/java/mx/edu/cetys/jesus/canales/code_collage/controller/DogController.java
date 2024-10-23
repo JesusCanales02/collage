@@ -80,7 +80,7 @@ public class DogController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    // Nuevo endpoint para obtener la descripción de un perro
+    // Nuevo endpoint para obtener la descripción de un perro, es necesario poner el local host 8080 y /describe{y el id de la base de datos}
     @GetMapping("/describe/{id}")
     public ResponseEntity<String> describeDog(@PathVariable Long id) {
         Dog dog = dogService.findById(id).orElse(null);

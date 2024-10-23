@@ -73,7 +73,7 @@ public class DogController {
         Dog savedDog = dogService.save(dog);
         return new ResponseEntity<>(savedDog, HttpStatus.CREATED);
     }
-
+//En caso de que quieras eliminar un perro, es necesario poner el local host 8080 y poner el id de la base de datos y asi eliminarlo
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteDog(@PathVariable Long id) {
         dogService.deleteById(id);
